@@ -1,0 +1,242 @@
+/* CONFIGURAÇÕES PADRÃO */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+button {
+  cursor: pointer;
+}
+.forum-content {
+  display: flex;
+}
+main {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+/* Configurações do conteúdo da página */
+.section-container {
+  width: 100%; 
+  max-width: 800px; 
+  margin: 20px auto;
+}
+.section-title {
+  color: #2b455b;
+}
+/* NAVBAR */
+.navbar {
+  background-color: #1e5d92;
+  width: 100%;
+  height: 55px;
+  gap: 0px;
+  opacity: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-orbis {
+  margin: 8px;  
+}
+.logo {
+  display: flex;
+}
+.logo-text {
+  font-family: Orbitron;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37.62px;
+  text-align: left;
+  width: 108px;
+  height: 33px;
+  margin-top: 8px;
+  margin-left: 8px;
+  color: #ffff;
+}
+.nav-itens {
+  display: flex;
+  margin-right: 33px;
+}
+
+.login-button {
+  background-color: #ffff;
+  width: 80px;
+  height: 35px;
+  margin: 10px ;
+  border-radius: 10px;
+  border-color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  color: black;
+  width: 546px;
+  height: 31px;
+  border-radius: 10px;
+  border-color: #ffff;
+  outline: none;
+  border-style: none;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.search-container img {
+  margin-top: 0px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* SIDEBAR */
+.sidebar-container {
+  width: 250px;
+  height: 100vh;
+  background-color: #2b455b;
+  overflow-y: auto;
+  padding-bottom: 20px;
+  position: sticky;
+  top: 0;
+}
+.topico-sidebar {
+  color: white;
+  padding-top: 20px;
+}
+.topico-titulo {
+  font-size: 20px;
+  padding: 0 0 6px 32px;
+  font-family: "Poppins", sans-serif;
+}
+.itens-topico {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.sidebar-container::-webkit-scrollbar {
+  width: 8px;
+}
+.sidebar-container::-webkit-scrollbar-thumb {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+.sidebar-container::-webkit-scrollbar-track {
+  background-color: #555;
+}
+.item-topico {
+  width: 100%;
+  text-align: left;
+  padding: 2px 0 2px 40px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+.item-topico:hover {
+  background-color: #122a3f;
+}
+/* POSTS */
+.post {
+  padding-top: 30px;
+  max-width: 864px;
+}
+.post-usuario {
+  color: #1e5d92;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+.post-conteudo {
+  padding: 6px 0 10px 0;
+}
+.post-tags {
+  display: flex;
+  gap: 14px;
+}
+.tag {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  padding: 3px 14px 3px 14px;
+  border-radius: 10px;
+}
+.java {
+  background-color: #df7314;
+}
+.python {
+  background-color: #1e5d92;
+}
+.dica {
+  background-color: #c60808;
+}
+.banco-de-dados {
+  background-color: #117f1e;
+}
+.post-likes-respostas {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 10px;
+}
+.heart-icon {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+.respostas {
+  color: #8a8a8a;
+  font-family: "Poppins", sans-serif;
+}
+/* TAGS MAIS USADAS */
+.cards {
+  padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 4rem;
+  column-gap: 3rem;
+  max-width: 950px;
+}
+.card {
+  border: 2px solid #b8b7b7;
+  width: 200px;
+  height: 180px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+.card:hover {
+  background-color: #2b455b;
+  border: none;
+}
+.card:hover .tag-titulo,
+.card:hover .qtde-posts {
+  color: white;
+}
+.tag-titulo {
+  color: #2b455b;
+  font-size: 23px;
+  font-weight: 600;
+}
+.qtde-posts {
+  color: #786e6e;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 10px;
+}
