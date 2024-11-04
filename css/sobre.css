@@ -1,0 +1,38 @@
+main {
+    width: 100%; 
+    max-width: 800px; 
+    margin: 20px auto;
+  }
+
+.about-title {
+    color: #2b455b;
+    font-weight: bold;
+}
+
+.about-conteudo {
+    padding: 6px 0 10px 0;
+    margin-top: 20px;
+    color: #1E5D92;
+}
+
+.team-title {
+    color: #2b455b;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.team-box {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+    column-gap: 3rem;
+    max-width: 950px;
+}
+
+.box {
+    font-size: 10px;
+    border: 2px solid #1E5D92;
+    padding: 10px;
+    border-radius: 5px;
+}
