@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open sans', sans-serif;
+}
+
+.login {
+    display: flex;
+}
+
+/* FORM DE LOGIN */
+
+.login__background {
+    height: 100vh;
+    width: 50%;
+    object-fit: cover;
+    position: relative;
+}
+
+.login__form-container {
+    display: flex;
+    flex-direction: column;
+    left: 190px;
+    top: 100px;
+    position: absolute;
+    padding: 70px 60px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.login__form-phrase {
+    color: #2B455B;
+    margin-bottom: 40px;
+}
+
+.form__input-box {
+    display: grid;
+    margin-bottom: 5px;
+}
+
+.input__label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.input__container {
+    padding: 8px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #D8D2D2;
+}
+
+.form__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form__btn-submit {
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #318AFF;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.form__register-text {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.form__register-account, .form__register-link {
+    font-size: 12px;
+}
+
+.form__register-link {
+    text-decoration: none;
+    color: #318AFF;
+}
+
+.form__register-link:hover {
+    text-decoration: underline;
+}
+
+/* FRASE E LOGO */
+
+.phrase__container {
+    width: 50%;
+}
+
+.phrase__content {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.phrase {
+    padding: 0px 90px;
+    font-size: 20px;
+}
+
+.phrase__text-highlight {
+    color: #318AFF;
+    font-weight: 700;
+}
