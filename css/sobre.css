@@ -1,5 +1,5 @@
 main {
-    width: 100%; 
+    width: 100%;
     max-width: 800px; 
     margin: 20px auto;
   }
@@ -10,9 +10,9 @@ main {
 }
 
 .about-conteudo {
-    padding: 6px 0 10px 0;
     margin-top: 20px;
     color: #1E5D92;
+    padding: 6px 0 10px 0;
 }
 
 .team-title {
