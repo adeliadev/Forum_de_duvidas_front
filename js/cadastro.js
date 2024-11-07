@@ -5,23 +5,23 @@ document.getElementById('register').addEventListener('submit', function (event) 
     const email = document.getElementById('email').value;
     const senha = document.getElementById('senha').value;
 
-    // Formata os dados como application/x-www-form-urlencoded
-    const data = new URLSearchParams();
-    data.append('nomeDeUsuario', nomeDeUsuario);
-    data.append('email', email);
-    data.append('senha', senha);
+    const data = {
+        nomeDeUsuario: nomeDeUsuario,
+        email: email,
+        senha: senha
+    };
 
-    fetch('http://localhost:8080/register', {
+    fetch('http://localhost:8080/api/registro', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
+            'Content-Type': 'application/json'
         },
-        body: data.toString() // Converte os dados para o formato x-www-form-urlencoded
+        body: JSON.stringify(data)
     })
     .then(response => {
         if (response.ok) {
             alert('Cadastro realizado com sucesso!');
-            window.location.href = 'login.html'; // Redireciona para a página de login após o cadastro
+            window.location.href = 'login.html';
         } else {
             return response.text().then(errorText => {
                 throw new Error(errorText || 'Erro ao cadastrar usuário');
