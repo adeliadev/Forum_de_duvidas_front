@@ -5,8 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Orbis | Fórum</title>
-  <link rel="stylesheet" href="/css/homeVisitante.css" />
-  <link rel="stylesheet" href="/css/homeUsuario.css" />
+  <link rel="stylesheet" href="../css/homeVisitante.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <!-- Open Sans -->
@@ -23,63 +22,67 @@
 <body>
   <!-- NAVBAR -->
   <div class="navbar">
-    <div class="logo">
+    <a href="#" class="logo">
       <div class="logo-svg">
-        <img class="logo-orbis" src="/images/logo.svg" />
+        <img class="logo-orbis" src="/images/navbar/logo.svg" />
       </div>
       <div class="logo-text">ORBIS</div>
-    </div>
+    </a>
     <div class="nav-itens">
       <div class="search-container">
-        <input type="text" placeholder="Pesquise por usuário, mensagem..." class="search-input" />
-        <img src="/images/navbar/search.svg"/>
+        <input
+          type="text"
+          placeholder="Pesquise por usuário, mensagem..."
+          class="search-input"
+        />
+        <img src="/images/navbar/search.svg">
       </div>
       <div class="login-button">Entrar</div>
     </div>
   </div>
-  <!-- CONTEÚDO DA PÁGINA -->
-  <div class="forum-content">
-    <!-- SIDEBAR -->
-    <aside class="sidebar-container">
-      <div class="topico-sidebar">
-        <h3 class="topico-titulo">Linguagens</h3>
-        <ul class="itens-topico">
-          <li><button class="item-topico">Java</button></li>
-          <li><button class="item-topico">Python</button></li>
-          <li><button class="item-topico">SQL</button></li>
-          <li><button class="item-topico">Html</button></li>
-          <li><button class="item-topico">Css</button></li>
-          <li><button class="item-topico">JavaScript</button></li>
-        </ul>
-      </div>
-      <div class="topico-sidebar">
-        <h3 class="topico-titulo">Publicações</h3>
-        <ul class="itens-topico">
-          <li><button class="item-topico">Dicas</button></li>
-          <li><button class="item-topico">Dúvidas</button></li>
-          <li><button class="item-topico">Respostas</button></li>
-        </ul>
-      </div>
-      <div class="topico-sidebar">
-        <h3 class="topico-titulo">Áreas</h3>
-        <ul class="itens-topico">
-          <li><button class="item-topico">Front-end</button></li>
-          <li><button class="item-topico">Back-end</button></li>
-          <li><button class="item-topico">Banco de dados</button></li>
-          <li><button class="item-topico">CyberSecurity</button></li>
-          <li><button class="item-topico">Jogos</button></li>
-          <li><button class="item-topico">IA</button></li>
-        </ul>
-      </div>
-      <div class="topico-sidebar">
-        <h3 class="topico-titulo">Recursos</h3>
-        <ul class="itens-topico">
-          <li><button class="item-topico">Sobre o Orbis</button></li>
-          <li><button class="item-topico">Ajuda</button></li>
-        </ul>
-      </div>
-    </aside>
 
+  <!-- SIDEBAR -->
+  <aside class="sidebar-container">
+    <div class="topico-sidebar">
+      <h3 class="topico-titulo">Linguagens</h3>
+      <ul class="itens-topico">
+        <li><button class="item-topico">Java</button></li>
+        <li><button class="item-topico">Python</button></li>
+        <li><button class="item-topico">SQL</button></li>
+        <li><button class="item-topico">Html</button></li>
+        <li><button class="item-topico">Css</button></li>
+        <li><button class="item-topico">JavaScript</button></li>
+      </ul>
+    </div>
+    <div class="topico-sidebar">
+      <h3 class="topico-titulo">Publicações</h3>
+      <ul class="itens-topico">
+        <li><button class="item-topico">Dicas</button></li>
+        <li><button class="item-topico">Dúvidas</button></li>
+        <li><button class="item-topico">Respostas</button></li>
+      </ul>
+    </div>
+    <div class="topico-sidebar">
+      <h3 class="topico-titulo">Áreas</h3>
+      <ul class="itens-topico">
+        <li><button class="item-topico">Front-end</button></li>
+        <li><button class="item-topico">Back-end</button></li>
+        <li><button class="item-topico">Banco de dados</button></li>
+        <li><button class="item-topico">CyberSecurity</button></li>
+        <li><button class="item-topico">Jogos</button></li>
+        <li><button class="item-topico">IA</button></li>
+      </ul>
+    </div>
+    <div class="topico-sidebar">
+      <h3 class="topico-titulo">Recursos</h3>
+      <ul class="itens-topico">
+        <li><button class="item-topico">Sobre o Orbis</button></li>
+        <li><button class="item-topico">Ajuda</button></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- CONTEÚDO DA PÁGINA -->
     <main>
       <!-- POSTS -->
       <section class="section-container">
@@ -188,9 +191,9 @@
         </div>
       </section>
     </main>
-  </div>
+  
   <!-- LINK DO JS -->
-  <script src="/scripts.js"></script>
+  <script src="../js/scripts.js"></script>
 </body>
 
 </html>

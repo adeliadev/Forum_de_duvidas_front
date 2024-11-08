@@ -13,7 +13,7 @@ textarea {
     flex-direction: column; 
     width: 100%; 
     max-width: 800px; 
-    margin: 20px auto;
+    margin: 20px 0 20px 110px;
 }
 
 .button-wrapper {

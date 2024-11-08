@@ -8,18 +8,14 @@
 button {
   cursor: pointer;
 }
-.forum-content {
-  display: flex;
-}
 main {
-  flex: 1;
   margin-bottom: 2rem;
+  padding-left: 250px;
+  padding-top: 55px;
 }
 /* Configurações do conteúdo da página */
 .section-container {
-  width: 100%; 
-  max-width: 800px; 
-  margin: 20px auto;
+  padding: 25px 90px 0 110px;
 }
 .section-title {
   color: #2b455b;
@@ -33,23 +29,30 @@ main {
   opacity: 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+.logo-svg {
+  display: flex;
+  align-items: center;
 }
 .logo-orbis {
-  margin: 8px;  
+  margin-left: 33px;
+  width: 60%;
 }
 .logo {
   display: flex;
+  text-decoration: none;
 }
 .logo-text {
   font-family: Orbitron;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 37.62px;
   text-align: left;
   width: 108px;
   height: 33px;
-  margin-top: 8px;
-  margin-left: 8px;
+  margin-left: 5px;
   color: #ffff;
 }
 .nav-itens {
@@ -59,9 +62,9 @@ main {
 
 .login-button {
   background-color: #ffff;
-  width: 80px;
-  height: 35px;
-  margin: 10px ;
+  width: 90px;
+  height: 40px;
+  margin-left: 30px;
   border-radius: 10px;
   border-color: #ffff;
   display: flex;
@@ -69,7 +72,7 @@ main {
   justify-content: center;
   cursor: pointer;
   font-family: Poppins;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 24px;
   text-align: left;
@@ -98,19 +101,18 @@ main {
 
 .search-container img {
   margin-top: 0px;
-  margin-left: 10px;
+  margin-left: 22px;
   cursor: pointer;
 }
-
 /* SIDEBAR */
 .sidebar-container {
   width: 250px;
-  height: 100vh;
+  height: calc(100vh - 55px);
   background-color: #2b455b;
   overflow-y: auto;
   padding-bottom: 20px;
-  position: sticky;
-  top: 0;
+  position: fixed;
+  top: 55px;
 }
 .topico-sidebar {
   color: white;
@@ -205,14 +207,14 @@ main {
   padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  row-gap: 4rem;
-  column-gap: 3rem;
+  row-gap: 3rem;
+  column-gap: 2rem;
   max-width: 950px;
 }
 .card {
   border: 2px solid #b8b7b7;
-  width: 200px;
-  height: 180px;
+  width: 190px;
+  height: 160px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
   display: flex;
