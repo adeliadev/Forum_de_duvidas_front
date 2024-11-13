@@ -1,0 +1,38 @@
+/* CONFIGURAÇÕES PADRÃO */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer{
+  height: 80px;
+  background-color: #1E5D92;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 45px;
+  padding-right: 60px;
+  margin-left: 250px;
+}
+
+.footer__logo, .footer__links{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer__links{
+  gap: 60px;
+}
+
+.footer__link{
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer__copyright, .footer__link{
+  font-size: 18px;
+  color: white;
+}
+
