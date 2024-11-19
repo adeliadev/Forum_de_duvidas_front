@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbis | Fórum</title>
+    <link rel="stylesheet" href="/css/faq.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/homeVisitante.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Open Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Orbitron -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+     <!-- NAVBAR -->
+  <div class="navbar">
+    <a href="#" class="logo">
+      <div class="logo-svg">
+        <img class="logo-orbis" src="/images/navbar/logo.svg" />
+      </div>
+      <div class="logo-text">ORBIS</div>
+    </a>
+    <div class="nav-itens">
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Pesquise por usuário, mensagem..."
+          class="search-input"
+        />
+        <img src="/images/navbar/search.svg">
+      </div>
+      <div class="login-button">Entrar</div>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar-container">
+    <div class="topico-sidebar">
+      <h3 class="topico-titulo">Linguagens</h3>
+      <ul class="itens-topico">
+        <li><button class="item-topico">Java</button></li>
+        <li><button class="item-topico">Python</button></li>
+        <li><button class="item-topico">SQL</button></li>
+        <li><button class="item-topico">Html</button></li>
+        <li><button class="item-topico">Css</button></li>
+        <li><button class="item-topico">JavaScript</button></li>
+      </ul>
+    </div>
+    <div class="topico-sidebar">
+      <h3 class="topico-titulo">Publicações</h3>
+      <ul class="itens-topico">
+        <li><button class="item-topico">Dicas</button></li>
+        <li><button class="item-topico">Dúvidas</button></li>
+        <li><button class="item-topico">Respostas</button></li>
+      </ul>
+    </div>
+    <div class="topico-sidebar">
+      <h3 class="topico-titulo">Áreas</h3>
+      <ul class="itens-topico">
+        <li><button class="item-topico">Front-end</button></li>
+        <li><button class="item-topico">Back-end</button></li>
+        <li><button class="item-topico">Banco de dados</button></li>
+        <li><button class="item-topico">CyberSecurity</button></li>
+        <li><button class="item-topico">Jogos</button></li>
+        <li><button class="item-topico">IA</button></li>
+      </ul>
+    </div>
+    <div class="topico-sidebar">
+      <h3 class="topico-titulo">Recursos</h3>
+      <ul class="itens-topico">
+        <li><button class="item-topico">Sobre o Orbis</button></li>
+        <li><button class="item-topico">Ajuda</button></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- FAQ -->
+  <main>
+    <section class="section-container">
+        <h1 class="section-title">Mande sua dúvida aqui!</h1>
+        <form class="formulario-duvida">
+            <div class="campo-email">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email">
+            </div>
+            
+            <div class="campo-duvida">
+                <label for="duvida">Dúvida:</label>
+                <textarea id="duvida" name="duvida" placeholder="Digite sua pergunta"></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </section>
+  </main>
+</body>
+</html>
