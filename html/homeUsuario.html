@@ -240,4 +240,155 @@
     <!-- LINK DO JS -->
     <script src="/scripts.js"></script>
   </body>
+    <main>
+      <div class="textarea-container">
+        <textarea id="texto" placeholder="Digite sua mensagem..."></textarea>
+        <div class="button-wrapper">
+          <div class="button-container">
+            <select class="nav-dropdown">
+              <option value="">Tags</option>
+              <option value="tag1">Tag 1</option>
+              <option value="tag2">Tag 2</option>
+              <option value="tag3">Tag 3</option>
+            </select>
+            <select class="nav-dropdown">
+              <option value="">Classificação</option>
+              <option value="class1">Classificação 1</option>
+              <option value="class2">Classificação 2</option>
+              <option value="class3">Classificação 3</option>
+            </select>
+          </div>
+          <button onclick="mostrarTexto()" class="send-button">Enviar</button>
+        </div>
+      </div>
+
+      <div id="loginModal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <span id="closeModal" class="close">&times;</span>
+          <h2>Login/Cadastro</h2>
+          <p>Por favor, faça login ou registre-se para continuar.</p>
+          <form id="loginForm">
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <button type="submit">Entrar</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- POSTS -->
+      <section class="section-container">
+        <h1 class="section-title">Últimas postagens</h1>
+        <!-- componente -->
+        <div class="post">
+          <p class="post-usuario">usuarioAleatorio66:</p>
+          <p class="post-conteudo">
+            Ante tortor senectus urna amet accumsan fermentum volutpat
+            pretium. Ante tortor senectus urna amet accumsan fermentum
+            volutpat pretium.
+          </p>
+          <div class="post-tags">
+            <div class="tag java">Java</div>
+            <div class="tag python">Python</div>
+          </div>
+          <div class="post-likes-respostas">
+            <img src="../images/postagens/unliked.svg" class="heart-icon" onclick="toggleLike(this)" alt="like-icon" />
+            <p class="respostas">5 respostas</p>
+          </div>
+        </div>
+        <!-- componente -->
+        <div class="post">
+          <p class="post-usuario">outroUsuario:</p>
+          <p class="post-conteudo">
+            Ante tortor senectus urna amet accumsan fermentum volutpat
+            pretium.
+          </p>
+          <div class="post-tags">
+            <div class="tag java">Java</div>
+          </div>
+          <div class="post-likes-respostas">
+            <img src="../images/postagens/unliked.svg" class="heart-icon" onclick="toggleLike(this)" alt="like-icon" />
+            <p class="respostas">1 resposta</p>
+          </div>
+        </div>
+        <!-- componente -->
+        <div class="post">
+          <p class="post-usuario">maisUmUsuario33:</p>
+          <p class="post-conteudo">
+            Ante tortor senectus urna amet accumsan fermentum volutpat
+            pretium. Ante tortor senectus urna
+          </p>
+          <div class="post-tags">
+            <div class="tag dica">Dica</div>
+            <div class="tag python">Python</div>
+          </div>
+          <div class="post-likes-respostas">
+            <img src="../images/postagens/unliked.svg" class="heart-icon" onclick="toggleLike(this)" alt="like-icon" />
+            <p class="respostas">1 resposta</p>
+          </div>
+        </div>
+        <!-- componente -->
+        <div class="post">
+          <p class="post-usuario">testeDeUsuario43:</p>
+          <p class="post-conteudo">
+            Ante tortor senectus urna amet accumsan fermentum volutpat
+            pretium. Ante tortor senectus urna amet accumsan
+          </p>
+          <div class="post-tags">
+            <div class="tag banco-de-dados">Banco de dados</div>
+          </div>
+          <div class="post-likes-respostas">
+            <img src="../images/postagens/unliked.svg" class="heart-icon" onclick="toggleLike(this)" alt="like-icon" />
+            <p class="respostas">2 respostas</p>
+          </div>
+        </div>
+      </section>
+      <!-- TAGS MAIS USADAS -->
+      <section class="section-container">
+        <h1 class="section-title">Tags mais usadas</h1>
+        <div class="cards">
+          <!-- componente -->
+          <div class="card">
+            <h3 class="tag-titulo">Python</h3>
+            <p class="qtde-posts">4366 posts</p>
+          </div>
+          <div class="card">
+            <h3 class="tag-titulo">Java</h3>
+            <p class="qtde-posts">6893 posts</p>
+          </div>
+          <div class="card">
+            <h3 class="tag-titulo">Golang</h3>
+            <p class="qtde-posts">1002 posts</p>
+          </div>
+          <div class="card">
+            <h3 class="tag-titulo">React JS</h3>
+            <p class="qtde-posts">5622 posts</p>
+          </div>
+          <div class="card">
+            <h3 class="tag-titulo">SQL</h3>
+            <p class="qtde-posts">2702 posts</p>
+          </div>
+          <div class="card">
+            <h3 class="tag-titulo">JavaScript</h3>
+            <p class="qtde-posts">7453 posts</p>
+          </div>
+          <div class="card">
+            <h3 class="tag-titulo">SpringBoot</h3>
+            <p class="qtde-posts">3202 posts</p>
+          </div>
+          <div class="card">
+            <h3 class="tag-titulo">JavaFX</h3>
+            <p class="qtde-posts">3202 posts</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <!-- LINK DO JS -->
+  <script src="../js/scripts.js"></script>
+</body>
+
 </html>

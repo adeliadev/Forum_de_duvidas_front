@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Orbis | Login</title>
+</head>
+
+<body>
+    <section class="login">
+        <img src="../images/login/background_login.png" alt="" class="login__background">
+
+        <div class="login__form-container">
+            <h2 class="login__form-phrase">Bem-vindo de volta!</h2>
+
+            <form method="post" action="/login" class="login__form-content" id="login">
+
+                <div class="form__input-box">
+                    <label for="username" class="input__label">Usuário:</label>
+                    <input type="text" name="username" id="username" class="input__container" autocomplete="off">
+                </div>
+
+                <div class="form__input-box">
+                    <label for="password" class="input__label">Senha:</label>
+                    <input type="password" name="password" id="password" class="input__container">
+                </div>
+
+                <div class="form__btn">
+                    <input type="submit" value="Entrar" class="form__btn-submit">
+                </div>
+
+                <div class="form__register-text">
+                    <p class="form__register-account">
+                        Ainda não faz parte do Orbis?
+                        <div>
+                            <a href="cadastro.html"  class="form__register-link">Cadastre-se</a>
+                        </div>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <div class="phrase__container">
+            <div class="phrase__content">
+                <img src="../images/login/logo_login.svg" alt="">
+                <p class="phrase">
+                    Tire suas <span class="phrase__text-highlight">dúvidas</span> e compartilhe
+                    seu <span class="phrase__text-highlight">conhecimento</span> com seus amigos! Ao dividir o que você sabe, você cresce e inspira outros a seguir o mesmo caminho de descoberta.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
