@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Orbis | Fórum</title>
-  <link rel="stylesheet" href="/css/homeVisitante.css" />
+  <link rel="stylesheet" href="../css/homeVisitante.css" />
   <link rel="stylesheet" href="/css/homeUsuario.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,7 +31,11 @@
     </div>
     <div class="nav-itens">
       <div class="search-container">
-        <input type="text" placeholder="Pesquise por usuário, mensagem..." class="search-input" />
+
+        <input type="text" id="search_box" class="search-input" placeholder="Pesquise por usuário, mensagem..." id="search_box" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onkeyup="load_data(this.value)" onfocus="load_search_history()" />
+
+        <div id="search_result"></div>
+
         <img src="/images/navbar/search.svg"/>
       </div>
       <div class="login-button">Entrar</div>
@@ -210,6 +214,7 @@
     </main>
   </div>
   <!-- LINK DO JS -->
+   <script src="../js/pesquisausuario.js"></script>
   <script src="/scripts.js"></script>
 </body>
 
